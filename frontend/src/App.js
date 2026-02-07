@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="p-8">
+      <h1 className="text-4xl font-bold text-red-500">
+        Тест Tailwind
+      </h1>
+      <div className="mt-4 p-4 bg-green-500 text-white rounded-lg">
+        ✅ Если этот блок ЗЕЛЕНЫЙ - Tailwind работает!
+      </div>
+      <div className="mt-4 p-4 bg-blue-500 text-white rounded-lg">
+        ✅ Если этот блок СИНИЙ - Tailwind работает!
+      </div>
+      <button className="mt-4 px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+        Тестовая кнопка
+      </button>
     </div>
   );
 }
