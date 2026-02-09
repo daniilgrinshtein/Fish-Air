@@ -1,25 +1,101 @@
-.btn {
+.btn-main {
     @apply
     bg-blue-500
     text-white
     font-medium
-    py-2
+    py-3
     px-6
-    mx-2
-    my-3
-    text-2xl
-    rounded
+    rounded-lg
     transition-all
     duration-300
-    ease-in-out;
+    ease-in-out
+    shadow-md
+    hover:shadow-lg
+    hover:scale-105
+    hover:bg-blue-600
+    active:scale-95
+    active:bg-blue-700
+    focus:outline-none
+    focus:ring-2
+    focus:ring-blue-400
+    focus:ring-offset-2;
+}
+.btn-alt {
+    @apply
+    bg-white
+    text-blue-600
+    font-semibold
+    py-2
+    px-5
+    rounded-full
+    border-2
+    border-blue-600
+    transition-all
+    duration-300
+    ease-in-out
+    hover:bg-blue-600
+    hover:text-white
+    hover:border-blue-700
+    hover:shadow-lg;
+}
+.logo {
+    @apply
+    w-16
+    h-16
+    object-contain
+    rounded-xl
+    bg-white
+    p-2 
+    shadow-md
+    transition-all
+    duration-300
+    hover:scale-110
+    hover:shadow-lg
+    hover:rotate-3;
+}
+.nav-container {
+    @apply
+    flex
+    items-center
+    justify-between
+    bg-gradient-to-r
+    from-blue-600
+    to-blue-800
+    text-white
+    p-4
+    shadow-lg;
 }
 
-.btn:hover {
+.logo-text-container {
     @apply
-    scale-110
-    bg-blue-700;
+    flex
+    items-center
+    space-x-4;
 }
-.btn:active {
+
+.site-title {
     @apply
-    bg-blue-100;
+    text-3xl
+    font-bold
+    tracking-tight;
+}
+@media (max-width: 768px) {
+    .btn-main {
+        @apply
+        py-2
+        px-4
+        text-lg
+        mx-1;
+    }
+    
+    .logo {
+        @apply
+        w-12
+        h-12;
+    }
+    
+    .site-title {
+        @apply
+        text-2xl;
+    }
 }
