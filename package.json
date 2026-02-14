@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/daniilgrinshtein/Fish-Air/issues"
   },
-  "homepage": "https://github.com/daniilgrinshtein/Fish-Air#readme"
+  "homepage": "https://github.com/daniilgrinshtein/Fish-Air#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
