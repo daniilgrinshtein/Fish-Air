@@ -1,4 +1,4 @@
-function about () {
+function about () {  
 return(
     <div>
         <title>Fish Air / О нас</title>

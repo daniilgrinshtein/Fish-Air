@@ -1,8 +1,8 @@
-import Home from './pages/home.js';
-import Search from './pages/search.js';
-import Flights from './pages/flights.js';
-import About from './pages/about.js';
-import Blog from './pages/blog.js';
+import Home from './pages/home.tsx';
+import Search from './pages/search.tsx';
+import Flights from './pages/flights.tsx';
+import About from './pages/about.tsx';
+import Blog from './pages/blog.tsx';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './css/App.css';
 import logo from './img/web-app-manifest-192x192.png';
